@@ -4,4 +4,4 @@ A simple website to display scenic roadtrip plans and completed roadtrip executi
 
 ## Run locally
 
-Open `/home/runner/work/Scenic-Roadtrips/Scenic-Roadtrips/index.html` in a browser.
+Open `index.html` in a browser.
