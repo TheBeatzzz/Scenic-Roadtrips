@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scenic Roadtrips</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f4f8fb;
+        --card: #ffffff;
+        --text: #1e2a3a;
+        --accent: #1f6feb;
+        --muted: #5d6a79;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      header {
+        background: linear-gradient(135deg, #1f6feb, #2ea043);
+        color: #fff;
+        padding: 2rem 1rem;
+        text-align: center;
+      }
+
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 1.5rem 1rem 2rem;
+      }
+
+      h2 {
+        margin-top: 2rem;
+        border-left: 4px solid var(--accent);
+        padding-left: 0.5rem;
+      }
+
+      .grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+
+      .trip {
+        background: var(--card);
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        padding: 1rem;
+      }
+
+      .trip h3 {
+        margin: 0 0 0.5rem;
+        font-size: 1.1rem;
+      }
+
+      .meta {
+        margin: 0.35rem 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Scenic Roadtrips</h1>
+      <p>Track upcoming adventures and relive completed drives.</p>
+    </header>
+
+    <main>
+      <section aria-labelledby="planned-title">
+        <h2 id="planned-title">Planned Roadtrips</h2>
+        <div class="grid">
+          <article class="trip">
+            <h3>Blue Ridge Parkway</h3>
+            <p class="meta"><strong>Dates:</strong> June 12-15, 2026</p>
+            <p class="meta"><strong>Route:</strong> Asheville, NC → Roanoke, VA</p>
+            <p class="meta"><strong>Highlights:</strong> Craggy Gardens, Mabry Mill</p>
+          </article>
+          <article class="trip">
+            <h3>Pacific Coast Highway</h3>
+            <p class="meta"><strong>Dates:</strong> August 3-7, 2026</p>
+            <p class="meta"><strong>Route:</strong> Monterey, CA → Santa Barbara, CA</p>
+            <p class="meta"><strong>Highlights:</strong> Big Sur, Bixby Bridge</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="completed-title">
+        <h2 id="completed-title">Completed Roadtrips</h2>
+        <div class="grid">
+          <article class="trip">
+            <h3>Going-to-the-Sun Road</h3>
+            <p class="meta"><strong>Completed:</strong> September 2025</p>
+            <p class="meta"><strong>Distance:</strong> 110 miles</p>
+            <p class="meta"><strong>Memorable stop:</strong> Logan Pass at sunrise</p>
+          </article>
+          <article class="trip">
+            <h3>Great Ocean Road</h3>
+            <p class="meta"><strong>Completed:</strong> March 2025</p>
+            <p class="meta"><strong>Distance:</strong> 151 miles</p>
+            <p class="meta"><strong>Memorable stop:</strong> Twelve Apostles coastal walk</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Scenic Roadtrips · plans and memories in one place
+    </footer>
+  </body>
+</html>
